@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended-type-checked",
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:react-hooks/recommended",
+		"plugin:import/recommended",
+		"plugin:jsx-a11y/recommended",
+		"plugin:tailwindcss/recommended",
+		"next/core-web-vitals"
+	],
+	"plugins": ["@typescript-eslint", "simple-import-sort"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": true
+	},
+	"rules": {
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"jsx-a11y/media-has-caption": "off"
+	},
+	"ignorePatterns": ["*.config.js"]
+}
